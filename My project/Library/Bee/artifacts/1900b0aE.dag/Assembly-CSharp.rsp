@@ -345,7 +345,9 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/NewBehaviourScript.cs"
+"Assets/Follow Path.cs"
+"Assets/Navigation.cs"
+"Assets/Steering.cs"
 -langversion:9.0
 
 /deterministic
