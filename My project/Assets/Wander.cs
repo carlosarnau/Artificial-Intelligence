@@ -40,17 +40,19 @@ public class Seeking : MonoBehaviour
         Vector3 worldTarget = transform.TransformPoint(localTarget);
         worldTarget.y = 0f;
 
-        if(NavMesh.SamplePosition(worldTarget, out NavMesh hit, radius, NavMesh.AllAreas))
+        NavMeshHit hit;
+
+        if (NavMesh.SamplePosition(worldTarget, out NavMeshHit hit, radius, NavMesh.AllAreas))
         {
-            Seeking(hit.psoition);
+            Seek(hit.psoition);
         }
         else
         {
-            worldTarget = transform.TrasnformPoint(localTarget);
+            worldTarget = transform.TrasnformPoint(-localTarget);
             worldTarget.y = 0f;
             if (NavMesh.SamplePosition(worldTarget, out hit, radius, NavMesh.AllAreas))
             {
-                Seeking(hit.psoition);
+                Seek(hit.psoition);
             }
         }
     }
