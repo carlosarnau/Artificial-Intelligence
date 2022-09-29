@@ -5,13 +5,11 @@ using UnityEngine.AI;
 
 public class Navigation : MonoBehaviour
 {
-    public GameObject target;
-    public NavMeshAgent agent;
-
     // Start is called before the first frame update
     void Start()
     {
-
+        public GameObject target;
+        public NavMeshAgent agent;
     }
 
     // Update is called once per frame
